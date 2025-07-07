@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
+@plugin "@tailwindcss/typography";
+
 @theme {
-  --font-sans: "Manulife JH Sans", sans-serif;
+  /* Manulife JH Sans for header? */
+  --font-sans: "PT Sans", sans-serif;
+  --font-serif: "Lora", serif;
 }
