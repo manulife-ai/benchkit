@@ -1,7 +1,3 @@
-<template>
-  <p>
-    Welcome to BenchKit, your go-to solution for all your benchmarking needs.
-  </p>
-</template>
+<template></template>
 
 <script></script>
