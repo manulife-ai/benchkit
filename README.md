@@ -1,59 +1,26 @@
-# Nuxt Minimal Starter
+# BenchKit
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Gen AI-powered Benchmarking Tool
 
 ## Setup
 
 Make sure to install dependencies:
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
-
-## Development Server
 
 Start the development server on `http://localhost:3000`:
 
 ```bash
 # npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
-
-## Production
 
 Build the application for production:
 
 ```bash
-# npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
 Locally preview production build:
@@ -61,15 +28,43 @@ Locally preview production build:
 ```bash
 # npm
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Features
+
+This application is designed to manage and benchmark test cases.
+The main feature allows users to manage test cases and review benchmarks.
+The validation process consists of an user interface for validating input(s) against expected output(s).
+For example, a user can upload a PDF or image file and validate it against a JSON output.
+
+Pages:
+
+- Login page
+  - Connected to Azure AD for authentication
+- Manage
+  - Role-based access control
+  - Create, edit, and delete test cases
+    - Needs to support upload multiple files and file types (json, img, pdf, txt)
+    - Needs to link between input(s) (pdf, txt, img) and output (json)
+  - Assign test cases to projects and users
+- Review
+  - Selection
+    - Show/filter samples with table view
+    - Navigate between samples with keyboard
+    - Show progress with progress bar
+  - Validation
+    - Show input(s) on the left, validation on the right
+    - Navigate between input fields with keyboard
+    - Add note with text/voice
+    - Submit button to log validation
+    - Show validation history
+- Analyse
+  - Show and filter benchmark results
+  - Compare benchmarks
+  - use `jsondiffpatch`
+- Backend API
+  - CRUD operations for test cases
+  - Authentication with Azure AD
+  - File upload handling
+  - Fetch benchmark results
+  - Fetch validated dataset

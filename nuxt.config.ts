@@ -1,9 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2025-05-15",
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   modules: ["@nuxt/ui", "@nuxt/test-utils", "@nuxt/eslint"],
   css: ["~/assets/css/main.css"],
+  ui: {
+    colors: {
+      primary: "zinc",
+    },
+  },
   app: {
     head: {
       title: "BenchKit",
