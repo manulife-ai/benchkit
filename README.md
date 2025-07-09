@@ -57,11 +57,7 @@ Pages:
     - Navigate between input fields with keyboard
     - Add note with text/voice
     - Submit button to log validation
-      - schema
-        - original
-        - validated
-        - timestamp
-        - user
+      - Push into the validated list
     - Show validation history
 - Analyse
   - Show and filter benchmark results
@@ -73,3 +69,23 @@ Pages:
   - File upload handling
   - Fetch benchmark results
   - Fetch validated dataset
+
+- blob
+  - inputs
+- db
+  - collections
+    - users
+    - projects
+    - test_cases
+      - inputs (list of objects)
+        - type (pdf, img, txt)
+        - file (file path)
+      - timestamp
+      - assigned (list of objects)
+        - user (user ID)
+        - project (project ID)
+      - original (object)
+      - validated (list of objects)
+        - timestamp
+        - user
+        - comment
