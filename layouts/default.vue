@@ -94,3 +94,9 @@ const userMenuItems = [
   },
 ];
 </script>
+
+<style>
+button {
+  @apply cursor-pointer;
+}
+</style>

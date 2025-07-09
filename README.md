@@ -57,6 +57,11 @@ Pages:
     - Navigate between input fields with keyboard
     - Add note with text/voice
     - Submit button to log validation
+      - schema
+        - original
+        - validated
+        - timestamp
+        - user
     - Show validation history
 - Analyse
   - Show and filter benchmark results

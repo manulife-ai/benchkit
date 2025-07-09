@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="font-serif text-2xl leading-tight font-normal text-gray-700">
-      Manage test cases
+      Manage samples
     </h1>
     <UTabs
       variant="link"
@@ -25,7 +25,7 @@ const items = ref<TabsItem[]>([
     label: "Projects",
   },
   {
-    label: "Test Cases",
+    label: "Samples",
   },
 ]);
 </script>
