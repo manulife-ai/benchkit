@@ -40,7 +40,7 @@
             :avatar="{
               src: 'https://github.com/romainmartinez.png',
             }"
-            size="xl"
+            size="2xl"
             color="neutral"
             variant="link"
             class="cursor-pointer"

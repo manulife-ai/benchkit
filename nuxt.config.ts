@@ -2,13 +2,20 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-05-15",
   devtools: { enabled: false },
-  modules: ["@nuxt/ui", "@nuxt/test-utils", "@nuxt/eslint", "@nuxt/image"],
-  css: ["~/assets/css/main.css"],
-  ui: {
-    colors: {
-      primary: "zinc",
-    },
+  modules: [
+    "@nuxt/ui",
+    "@nuxt/test-utils",
+    "@nuxt/eslint",
+    "@nuxt/image",
+    "nuxt-mongoose",
+  ],
+  mongoose: {
+    uri: process.env.MONGODB_URI || "mongodb://localhost:27017/benchkit",
+    options: {},
+    modelsDir: "models",
+    devtools: true,
   },
+  css: ["~/assets/css/main.css"],
   app: {
     head: {
       title: "BenchKit",
