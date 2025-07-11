@@ -12,9 +12,28 @@ export const useUsers = () => {
     });
   };
 
+  const updateUser = async (
+    id: string,
+    userData: Partial<IUser>,
+  ): Promise<IUser> => {
+    return await $fetch(`/api/users/${id}`, {
+      method: "POST",
+      body: { ...userData, _method: "PATCH" },
+    });
+  };
+
+  const deleteUser = async (id: string): Promise<void> => {
+    return await $fetch(`/api/users/${id}`, {
+      method: "POST",
+      body: { _method: "DELETE" },
+    });
+  };
+
   return {
     getUsers,
     createUser,
+    updateUser,
+    deleteUser,
   };
 };
 
@@ -32,9 +51,28 @@ export const useProjects = () => {
     });
   };
 
+  const updateProject = async (
+    id: string,
+    projectData: Partial<IProject>,
+  ): Promise<IProject> => {
+    return await $fetch(`/api/projects/${id}`, {
+      method: "POST",
+      body: { ...projectData, _method: "PATCH" },
+    });
+  };
+
+  const deleteProject = async (id: string): Promise<void> => {
+    return await $fetch(`/api/projects/${id}`, {
+      method: "POST",
+      body: { _method: "DELETE" },
+    });
+  };
+
   return {
     getProjects,
     createProject,
+    updateProject,
+    deleteProject,
   };
 };
 
@@ -57,6 +95,23 @@ export const useTestCases = () => {
     });
   };
 
+  const updateTestCase = async (
+    id: string,
+    testCaseData: Partial<ITestCase>,
+  ): Promise<ITestCase> => {
+    return await $fetch(`/api/test-cases/${id}`, {
+      method: "POST",
+      body: { ...testCaseData, _method: "PATCH" },
+    });
+  };
+
+  const deleteTestCase = async (id: string): Promise<void> => {
+    return await $fetch(`/api/test-cases/${id}`, {
+      method: "POST",
+      body: { _method: "DELETE" },
+    });
+  };
+
   const validateTestCase = async (
     id: string,
     validationData: {
@@ -74,6 +129,8 @@ export const useTestCases = () => {
   return {
     getTestCases,
     createTestCase,
+    updateTestCase,
+    deleteTestCase,
     validateTestCase,
   };
 };
