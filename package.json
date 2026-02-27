@@ -7,7 +7,7 @@
     "dev": "concurrently \"pnpm db:start\" \"pnpm dev:nuxt\" --names \"MongoDB,Nuxt\" --prefix-colors \"green,blue\" --kill-others-on-fail",
     "dev:nuxt": "nuxt dev",
     "dev:standalone": "nuxt dev",
-    "db:start": "mongod --dbpath ./data/db --port 27017  --quiet --logpath /dev/null",
+    "db:start": "mkdir -p ./data/db && mongod --dbpath ./data/db --port 27017 --quiet --logpath /dev/null",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
