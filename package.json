@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "concurrently \"npm run db:start\" \"npm run dev:nuxt\" --names \"MongoDB,Nuxt\" --prefix-colors \"green,blue\" --kill-others-on-fail",
+    "dev": "concurrently \"pnpm db:start\" \"pnpm dev:nuxt\" --names \"MongoDB,Nuxt\" --prefix-colors \"green,blue\" --kill-others-on-fail",
     "dev:nuxt": "nuxt dev",
     "dev:standalone": "nuxt dev",
     "db:start": "mongod --dbpath ./data/db --port 27017  --quiet --logpath /dev/null",
@@ -33,5 +33,14 @@
     "prettier-plugin-tailwindcss": "^0.6.13",
     "tailwindcss": "^4.1.11",
     "tsx": "^4.20.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild",
+      "sharp",
+      "unrs-resolver",
+      "vue-demi"
+    ]
   }
 }

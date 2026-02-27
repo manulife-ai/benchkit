@@ -7,7 +7,7 @@ Gen AI-powered Benchmarking Tool
 Make sure to install dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
 
 ### Database Setup
@@ -50,7 +50,7 @@ cp .env.example .env
 3. Start development (MongoDB + Nuxt concurrently):
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 **Option 2: External MongoDB Instance**
@@ -62,7 +62,7 @@ If you have MongoDB running elsewhere (remote server, cloud instance, etc.):
 MONGODB_URI=mongodb://your-host:27017/benchkit
 
 # Start Nuxt only
-npm run dev:standalone
+pnpm dev:standalone
 ```
 
 **Note**: During development, uploaded files are stored locally in `/public/uploads/`. For production, you should configure Azure Blob Storage or another cloud storage solution.
@@ -85,7 +85,7 @@ MONGODB_URI=mongodb://your-cosmos-account.mongo.cosmos.azure.com:10255/benchkit?
 Start both MongoDB and Nuxt concurrently:
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 This will start:
@@ -96,7 +96,7 @@ This will start:
 **Other Available Scripts**
 
 ```bash
-npm run dev:standalone    # Start Nuxt only (if MongoDB is running elsewhere)
+pnpm dev:standalone    # Start Nuxt only (if MongoDB is running elsewhere)
 ```
 
 ### Getting Started with Database
@@ -118,21 +118,20 @@ The application will automatically connect to your local MongoDB instance or Cos
 
 **Development Scripts:**
 
-- `npm run dev` - Start MongoDB + Nuxt concurrently (recommended)
-- `npm run dev:standalone` - Start Nuxt only (if MongoDB running elsewhere)
+- `pnpm dev` - Start MongoDB + Nuxt concurrently (recommended)
+- `pnpm dev:standalone` - Start Nuxt only (if MongoDB running elsewhere)
 - `./setup.sh` - Quick setup script for new environments
 
 Build the application for production:
 
 ```bash
-npm run build
+pnpm build
 ```
 
 Locally preview production build:
 
 ```bash
-# npm
-npm run preview
+pnpm preview
 ```
 
 ## Features

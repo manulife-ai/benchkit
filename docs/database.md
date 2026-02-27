@@ -81,7 +81,7 @@ await validateTestCase(testCaseId, {
 For development and testing, use the provided seed script:
 
 ```bash
-npm run db:seed
+pnpm db:seed
 ```
 
 This creates sample users, projects, and test cases to get started quickly.
