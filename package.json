@@ -1,6 +1,5 @@
 {
-  "name": "nuxt-app",
-  "private": true,
+  "name": "benchkit",
   "type": "module",
   "scripts": {
     "build": "nuxt build",
