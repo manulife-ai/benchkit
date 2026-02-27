@@ -1,4 +1,4 @@
-import { Project, TestCase, User } from "~/models";
+import { Project, TestCase, User } from "~~/models";
 
 export default defineEventHandler(async (event) => {
   try {

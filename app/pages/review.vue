@@ -248,7 +248,7 @@
 </template>
 
 <script setup lang="ts">
-import type { ITestCase } from "~/models";
+import type { ITestCase } from "~~/models";
 
 const toast = useToast();
 const { getTestCases, validateTestCase } = useTestCases();

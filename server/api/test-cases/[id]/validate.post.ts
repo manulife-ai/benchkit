@@ -1,4 +1,4 @@
-import { TestCase } from "~/models";
+import { TestCase } from "~~/models";
 
 export default defineEventHandler(async (event) => {
   try {

@@ -1,4 +1,4 @@
-import type { IProject, ITestCase, IUser } from "~/models";
+import type { IProject, ITestCase, IUser } from "~~/models";
 
 export const useUsers = () => {
   const getUsers = async (): Promise<IUser[]> => {

@@ -439,7 +439,7 @@
 <script setup lang="ts">
 import type { TableColumn, TabsItem } from "@nuxt/ui";
 import { h, nextTick, resolveComponent } from "vue";
-import type { IProject, ITestCase, IUser } from "~/models";
+import type { IProject, ITestCase, IUser } from "~~/models";
 
 const UButton = resolveComponent("UButton");
 const UBadge = resolveComponent("UBadge");
