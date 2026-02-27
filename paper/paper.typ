@@ -147,7 +147,7 @@ Importantly, as the total population size increases, the required sample size ap
   placement: none,
   scope: "column",
   caption: [Required sample size ($n$) as a function of the total population size ($N$) with a desired margin of error fixed at 5%.],
-  image("../static/sample-size.svg", width: 100%),
+  image("static/sample-size.svg", width: 100%),
 ) <fig:sample-size>
 
 While humans should lead ground truth creation, AI-assisted tools can propose initial drafts for expert review and
@@ -202,7 +202,7 @@ inherent uncertainty, providing decision-makers with a more complete picture of 
   scope: "column",
   caption: [Confidence interval computed using the Wilson score method. The shaded area represents the 95% confidence interval for
     an observed proportion $hat(p) = 50%$.],
-  image("../static/confidence-interval.svg", width: 100%),
+  image("static/confidence-interval.svg", width: 100%),
 ) <fig:confidence-interval>
 
 While metrics provide quantitative assessment, implementation requires both automated and human evaluation components.
@@ -272,7 +272,7 @@ significantly reduce manual data entry while maintaining accuracy in customer re
   scope: "column",
   caption: [Structured document processing task overview. We provide an address change form (left) and the system extracts the
     required fields (right).],
-  image("../static/idp-overview.svg", width: 100%),
+  image("static/idp-overview.svg", width: 100%),
 ) <fig:idp-overview>
 
 As previously described, the benchmark workflow begins by establishing a reliable ground truth dataset. We first
@@ -292,7 +292,7 @@ fields of interest (@fig:idp-parameters).
   scope: "column",
   caption: [The ground truth dataset is created by providing curated documents, the required schema, and prompt (top) to the GenAI
     system (middle) to extract the corresponding fields (bottom).],
-  image("../static/idp-parameters-vertical.svg", width: 95%),
+  image("static/idp-parameters-vertical.svg", width: 95%),
 ) <fig:idp-parameters>
 
 Subject matter experts then annotated the baseline values to establish the ground truth. To facilitate this process, we
@@ -303,7 +303,7 @@ feedback, and track annotation versions over time (@fig:field-validation).
   placement: none,
   scope: "column",
   caption: [The custom annotation frontend application allows users to review and correct model predictions.],
-  image("../static/field-validation.svg", width: 90%),
+  image("static/field-validation.svg", width: 90%),
 ) <fig:field-validation>
 
 To evaluate the AI system's deployment readiness, we ran performance benchmarks on curated forms and compared extracted
@@ -317,7 +317,7 @@ performance including Wilson score confidence intervals as described in @sec:per
     dataset. The left column displays hierarchical fields, while the right shows error counts and accuracy metrics. The far
     right column visualizes accuracy (white mark) and confidence intervals (blue bar). Bolded fields indicate significant
     differences from the overall accuracy.],
-  image("../static/accuracy-table.svg", width: 100%),
+  image("static/accuracy-table.svg", width: 100%),
 ) <fig:accuracy-table>
 
 The results revealed high accuracy for fields such as document type (100±1%) and customer phone (92±7%), while
@@ -346,7 +346,7 @@ readiness with a clear understanding of performance reliability.
   placement: none,
   scope: "column",
   caption: [Benchmark workflow applied to the structured document processing task.],
-  image("../static/idp-benchmark-workflow.svg", width: 30%),
+  image("static/idp-benchmark-workflow.svg", width: 30%),
 ) <fig:workflow-overview>
 
 == Use Case 2: Unstructured Chatbot Task
